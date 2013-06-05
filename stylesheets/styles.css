@@ -755,6 +755,10 @@ body *{
   display: block;
 }
 
+#habla_link_div{
+  opacity: 0.1;
+}
+
 
 @media print, screen and (max-width: 720px) {
   #header {
