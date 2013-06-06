@@ -743,6 +743,14 @@ body *{
 #habla_window_state_div {
   direction: ltr;
 }
+#habla_middle_wrapper_div{
+  direction: rtl;
+  text-align: right !important;
+}
+#habla_window_state_div textarea{
+  text-align: right !important;
+  padding-right: 5px !important;
+}
 #habla_link_div{
   opacity: 0.1;
 }
