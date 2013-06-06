@@ -750,6 +750,7 @@ body *{
 #habla_window_state_div textarea{
   text-align: right !important;
   padding-right: 5px !important;
+  direction: rtl;
 }
 #habla_link_div{
   opacity: 0.1;
