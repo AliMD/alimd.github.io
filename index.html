@@ -120,6 +120,13 @@
   /* custom configuration goes here (www.olark.com/documentation) */
   olark.identify('5275-234-10-9163');/*]]>*/</script><noscript><a href="https://www.olark.com/site/5275-234-10-9163/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
   <!-- end olark code -->
-
+  <script>
+    (fix_olark = function(){
+      var habla_window_div = document.querySelector('#habla_window_div');
+      if(!habla_window_div) return setTimeout(fix_olark,200);
+      habla_window_div.attributes.item(1).value+=';right:auto !important;';
+      console.log('Olark fixed ...');
+    })();
+  </script>
 </body>
 </html>

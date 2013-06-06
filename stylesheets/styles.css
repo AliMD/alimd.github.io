@@ -540,7 +540,7 @@ blockquote {
 code {
   font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
   color: #efefef;
-  font-size: 13px;
+  font-size: 14px;
   margin: 0 4px;
   padding: 4px 6px;
   -moz-border-radius: 2px;
@@ -739,8 +739,19 @@ body *{
   float: right;
 }
 
+/* chat box */
 #habla_window_state_div {
   direction: ltr;
+}
+#habla_link_div{
+  opacity: 0.1;
+}
+#habla_window_div{
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .lt-ie8 nav {
@@ -755,9 +766,7 @@ body *{
   display: block;
 }
 
-#habla_link_div{
-  opacity: 0.1;
-}
+
 
 
 @media print, screen and (max-width: 720px) {
