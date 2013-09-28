@@ -80,4 +80,4 @@ exclude_generator:
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
   type: github
-  repository: https://github.com/alimd/alimd.github.io
+  repository: https://github.com/AliMD/alimd.github.io.git

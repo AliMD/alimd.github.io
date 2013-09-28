@@ -9,6 +9,9 @@ Desktop.ini
 #SublimeText
 *.sublime-*
 
-#node.js
+#Node.js
 node_modules
+
+#Generated Contents
 db.json
+public
