@@ -1,4 +1,0 @@
-/* THANKS */
-
-  Contributors: https://github.com/AliMD/alimd.github.io/graphs/contributors
-  
