@@ -1,0 +1,181 @@
+* { box-sizing: border-box; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; margin: 0; padding: 0; tap-highlight-color:rgba(0,0,0,0); }
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #F0F0F0;
+  font-family: 'Inconsolata', 'courier', monospace;
+  font-style: normal;
+  font-weight: 100;
+  color: #202020;
+  font-smoothing: antialiased;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 20em;
+  width: 100%;
+  height: 10em;
+  margin: -5em 0 0 -10em;
+  text-align: center;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  width: 1em;
+  height: 1em;
+  margin: 0 auto;
+  background-color: #303132;
+  font-size: 3em;
+  line-height: 3em;
+  color: transparent;
+  border-radius: 50%;
+  border: 0em solid #39F;
+  transition: all .15s ease-in-out;
+  animation: logo .25s ease-out 2.4s 1 normal forwards;
+}
+
+h1 a:hover, h1 a:focus { background-color: #39F; }
+h1 a:active { transform: scale(.8); }
+
+@keyframes logo {
+  0%   { transform: rotate(25deg) scale(.01); opacity: 0; }
+  70%  { transform: scale(1.4); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+h1 em {
+  position: absolute;
+  display: block;
+  top: .5em;
+  left: .4375em;
+  font-size: .5em;
+  line-height: 1em;
+  color: #FFF;
+}
+
+h1 em:last-child {
+  top: .5em;
+  left: 1em;
+}
+
+h2 {
+  display: block;
+  height: 1.5em;
+  margin: 1.5em 0;
+  color: #606060;
+  line-height: 1.25em;
+}
+
+hr {
+  position: relative;
+  width: 4em;
+  height: 1px;
+  background: #202020;
+  margin: 1em auto;
+}
+
+.slogan {
+  position: relative;
+  display: block;
+  overflow: hidden; 
+  width: 0em;
+  height: 1.25em;
+  margin: .5em auto;
+  font-size: 2em;
+  line-height: 1.5em;
+  border-right: .125em solid #39F;
+  box-sizing: content-box;
+  animation-name: blink-start, typing, blink-end;
+  animation-duration: 1s, 1s, 1s;
+  animation-timing-function: linear, steps(13, end), linear;
+  animation-delay: 0s, 1s, 2s;
+  animation-iteration-count: 1, 1, infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.slogan span {
+  display: block;
+  width: 6.5em;
+  height: 1.25em;
+}
+
+@keyframes typing {
+  from { width: 0em; }
+  to   { width: 6.5em; }
+}
+
+@keyframes blink-start {
+  from, to { border-color: #39F; }
+  50% { border-color: transparent; }
+}
+
+@keyframes blink-end {
+  from, to { border-color: #39F; }
+  50% { border-color: transparent; }
+}
+
+.contact {
+  position: relative;
+  width: 250px;
+  margin: -1em auto 1.5em auto;
+}
+
+.contact a {
+  display: inline-block;
+  overflow: hidden;
+  opacity: 0;
+  width: 2em;
+  height: 2em;
+  margin: 0 .25em;
+  padding 7px
+  background-repeat: no-repeat;
+  color: #000;
+  transition: background-color .2s ease-in-out;
+  border-radius: 50%;
+  animation: icons .2s ease-out 0s 1 normal forwards;
+}
+
+@keyframes icons {
+  0%    { transform: translateY(3em); opacity: 0; }
+  70%   { transform: translateY(-.5em); opacity: 1; }
+  100%  { transform: translateY(0em); opacity: 1; }
+}
+
+.contact a:nth-child(1) { animation-delay: 2.5s; }
+.contact a:nth-child(2) { animation-delay: 2.55s; }
+.contact a:nth-child(3) { animation-delay: 3.3s; }
+.contact a:nth-child(4) { animation-delay: 2.65s; }
+.contact a:nth-child(5) { animation-delay: 2.7s; }
+
+.contact a:hover {
+  background-color: #ddd;
+}
+
+.contact a[href*="mailto"]  { background-position:  0px  8px; }
+.contact a[href*="github"]  { background-position: -32px 8px; }
+.contact a[href*="codepen"] { background-position: -64px 8px; }
+.contact a[href*="twitter"] { background-position: -96px 8px; }
+
+// @media 
+//   (min--moz-device-pixel-ratio: 2),
+//   (-o-min-device-pixel-ratio: 2/1), 
+//   (-webkit-min-device-pixel-ratio: 2), 
+//   (min-device-pixel-ratio: 2) {
+//   .contact a {
+//     background-image: url("../img/sprite-2x.png");
+//     background-size: 128px 16px;
+//   }
+// }
